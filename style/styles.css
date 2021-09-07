@@ -1,0 +1,249 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap");
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: #3e52a3;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Manrope", sans-serif;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+body {
+  background-color: #ecf2f8;
+}
+
+.container {
+  width: 600px;
+  margin: 5rem auto;
+  border-radius: 6px;
+  -webkit-box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.1);
+          box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.1);
+}
+
+.container .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container .row .img {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url(/frontendmentorChallenges/Newbie/article-preview-component-master/img/drawers.jpg);
+  width: 35%;
+  height: 200px;
+}
+
+.container .info {
+  background-color: white;
+  padding: 1.5rem;
+  width: 65%;
+}
+
+.container .info__title {
+  color: #48556a;
+  font-size: 0.9rem;
+  margin-bottom: 0.7rem;
+}
+
+.container .info__desc {
+  color: #6d7f97;
+  font-size: 0.7rem;
+  margin-bottom: 1.5rem;
+}
+
+.container .tab-mobile {
+  display: none;
+}
+
+.container .social img {
+  width: 2rem;
+  height: auto;
+  border-radius: 50px;
+  margin-right: 1rem;
+}
+
+.container .social .fa-share {
+  cursor: pointer;
+  margin-left: auto;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  background-color: #ecf2f8;
+  color: #6d7f97;
+  padding: 5px;
+  border-radius: 50px;
+  -webkit-transition: 0.1s;
+  transition: 0.1s;
+  font-size: 0.7rem;
+}
+
+.container .social .fa-share:active {
+  color: white;
+  background-color: #48556a;
+}
+
+.container .social .user {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  margin-right: auto;
+}
+
+.container .social .user__name {
+  color: #48556a;
+  font-size: 0.6rem;
+}
+
+.container .social .user__date {
+  color: #6d7f97;
+  font-size: 0.55rem;
+}
+
+.container .social .share-btn {
+  position: relative;
+}
+
+.container .social .share-btn .share-tab {
+  display: none;
+  position: absolute;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  top: -2.8rem;
+  right: -3.7rem;
+  background: #48556a;
+  padding: 0.5rem 1.5rem;
+  border-radius: 4px;
+}
+
+.container .social .share-btn .share-tab p {
+  font-size: 0.65rem;
+  color: #9eafc2;
+}
+
+.container .social .share-btn .share-tab i {
+  color: white;
+  background-color: #48556a;
+  margin-left: 0.5rem;
+  cursor: pointer;
+}
+
+.container .social .share-btn .share-tab i:active {
+  opacity: 0.5;
+}
+
+.container .social .share-btn .share-tab::before {
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  content: "";
+  border-top: 9px solid #48556a;
+  position: absolute;
+  -webkit-transform: translateX(43px) translateY(21px);
+  transform: translateX(45px) translateY(20px);
+}
+
+@media (max-width: 500px) {
+  .container {
+    width: 90%;
+    overflow: hidden;
+    border-radius: 12px;
+  }
+  .container .row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .container .row .img {
+    width: 100%;
+    height: 220px;
+  }
+  .container .col {
+    width: 100%;
+  }
+  .container .info {
+    padding: 0;
+  }
+  .container .info__col {
+    padding: 1.8rem;
+  }
+  .container .info__title {
+    font-size: 1.1rem;
+  }
+  .container .info__desc {
+    font-size: 0.9rem;
+    margin-bottom: 1.5rem;
+    line-height: 1.4rem;
+  }
+  .container .social img,
+  .container .social .user,
+  .container .social .user__name,
+  .container .social .share-btn {
+    display: none;
+  }
+  .tab-mobile {
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background: #48556a;
+    padding: 1.2rem 1.8rem;
+    border-radius: 4px;
+  }
+  .tab-mobile p {
+    font-size: 1rem;
+    color: #9eafc2;
+    margin-right: 1rem;
+    letter-spacing: 4.5px;
+  }
+  .tab-mobile .fa-share {
+    cursor: pointer;
+    margin-left: auto;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    background-color: #6d7f97;
+    color: white;
+    padding: 10px;
+    border-radius: 50px;
+    -webkit-transition: 0.1s;
+    transition: 0.1s;
+    font-size: 1rem;
+  }
+  .tab-mobile .fa-share:active {
+    color: white;
+    background-color: #48556a;
+  }
+  .tab-mobile i {
+    color: white;
+    background-color: #48556a;
+    margin-left: 0.75rem;
+    cursor: pointer;
+    font-size: 1.4rem;
+  }
+  .tab-mobile i:active {
+    opacity: 0.5;
+  }
+}
+/*# sourceMappingURL=styles.css.map */
