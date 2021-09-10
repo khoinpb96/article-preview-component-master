@@ -34,7 +34,7 @@ body {
     .img {
       background-repeat: no-repeat;
       background-size: cover;
-      background-image: url(/frontendmentorChallenges/Newbie/article-preview-component-master/img/drawers.jpg);
+      background-image: url(../img/drawers.jpg);
       width: 35%;
       height: 200px;
     }
@@ -104,7 +104,9 @@ body {
         background: $darkGray;
         padding: 0.5rem 1.5rem;
         border-radius: 4px;
-
+        &.active {
+          display: flex;
+        }
         p {
           font-size: 0.65rem;
           color: $lightGray;

@@ -44,7 +44,7 @@ body {
 .container .row .img {
   background-repeat: no-repeat;
   background-size: cover;
-  background-image: url(/frontendmentorChallenges/Newbie/article-preview-component-master/img/drawers.jpg);
+  background-image: url(../img/drawers.jpg);
   width: 35%;
   height: 200px;
 }
@@ -130,6 +130,12 @@ body {
   background: #48556a;
   padding: 0.5rem 1.5rem;
   border-radius: 4px;
+}
+
+.container .social .share-btn .share-tab.active {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .container .social .share-btn .share-tab p {

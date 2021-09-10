@@ -1,7 +1,7 @@
-let shareBtn = document.querySelector(".fa-share");
+const $ = document.querySelector.bind(document);
+const shareBtn = $(".share-btn");
+const shareTab = $(".share-tab");
 
-function shareBtnFunc() {
-  return console.log(1);
-}
-
-shareBtn.addEventListener("click", shareBtnFunc);
+shareBtn.onclick = () => {
+  shareTab.classList.toggle("active");
+};
